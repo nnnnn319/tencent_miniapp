@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.tamsiree.RxTool:RxKit:v2.4.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5ad18134474095503f4f865719f6fb83/RxKit-v2.4.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5ad18134474095503f4f865719f6fb83/RxKit-v2.4.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.tamsiree.RxTool/RxKit/v2.4.1/57a54a5f6ead8e9d8abd802d20ad73d52a8bf1fa/RxKit-v2.4.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

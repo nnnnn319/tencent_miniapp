@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.upfarm">
+    <!-- 传图 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--阿里支付权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+
+    <application
+        android:name=".utils.MyApplication"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@drawable/icon1"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/icon1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".chat.ChatActivity"></activity>
+        <activity android:name=".user.fragment.user.MyCommentActivity" />
+        <activity android:name=".market.GoodsCommentActivity" />
+        <activity android:name=".user.fragment.user.NewAddressActivity" />
+        <activity android:name=".user.fragment.user.AddressActivity" />
+        <activity android:name=".user.fragment.shangjia.UpdateFarmActivity" />
+        <activity android:name=".user.fragment.shangjia.FarmInfomationActivity" />
+        <activity android:name=".user.fragment.shangjia.SjUserPlantActivity" />
+        <activity android:name=".user.fragment.shangjia.SjPlantOrderActivity" />
+        <activity android:name=".user.fragment.shangjia.SjGoodsOrderActivity" />
+        <activity android:name=".user.fragment.user.CheckPlantActivity" />
+        <activity android:name=".user.fragment.user.PlantOrderActivity" />
+        <activity android:name=".market.ShowPlantAvtivity" />
+        <activity android:name=".user.fragment.user.GotoCommentAvtivity" />
+        <activity android:name=".user.fragment.user.UserOrderActivity" />
+        <activity android:name=".market.ShowOrderActivity" />
+        <activity android:name=".market.SureBuyActivity" />
+        <activity android:name=".rent.SelectSeedActivity" />
+        <activity android:name=".user.fragment.shangjia.SjGoodsInfoActivity" />
+        <activity android:name=".user.fragment.shangjia.NewAndUpdateSeedActivity" />
+        <activity android:name=".user.fragment.shangjia.NewAndUpdateGoodsActivity" />
+        <activity android:name=".user.fragment.manager.MFarmActivity" />
+        <activity android:name=".user.fragment.manager.MUserActivity" />
+        <activity android:name=".user.fragment.shangjia.MessageActivity" />
+        <activity
+            android:name=".market.SelectGoodsNumActivity"
+            android:theme="@style/bottom_style" />
+        <activity android:name=".user.fragment.shangjia.OrderActivity" />
+        <activity android:name=".user.fragment.shangjia.FarmActivity" />
+        <activity android:name=".user.fragment.shangjia.ShopActivity" />
+        <activity android:name=".base.pay.PayActivity" />
+        <activity android:name=".rent.SurePlantActivity" />
+        <activity android:name=".market.GoodsInfoActivity" />
+        <activity android:name=".user.fragment.RegisterCheckActivity" />
+        <activity android:name=".rent.LandSelectionActivity" />
+        <activity android:name=".user.fragment.RegisterListActivity" />
+        <activity android:name=".market.GoodsListActivity" />
+        <activity android:name=".PwdForgetActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginNewActivity" />
+        <activity android:name=".user.fragment.ShangjiaRegisterActivity" />
+        <activity android:name=".user.fragment.InformationActivity" />
+        <activity android:name=".FirstActivity" />
+        <activity android:name=".map.MapActivity"/>
+        <activity android:name=".map.MapRoutingActivity"/>
+
+        <activity android:name=".MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!-- 传图 -->
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".imagePicket.PickerActivity" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <activity
+            android:name=".alipay.PayDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="qoDlWbwGidQwvqbBxfePhhAE4rcHyxdC" />
+
+        <service android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data android:name="EASEMOB_APPKEY"  android:value="1108200712168848#demo" />
+        <!-- 声明SDK所需的service SDK核心功能-->
+        <service android:name="com.hyphenate.chat.EMChatService" android:exported="true"/>
+        <service android:name="com.hyphenate.chat.EMJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"
+            />
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+    </application>
+
+
+
+</manifest>

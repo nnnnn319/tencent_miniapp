@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/boder"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/iv_seed_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/up_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="数    量：  "
+                    android:textColor="#5d5d5d"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20㎡"
+                    android:textColor="#5d5d5d"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="#e5e5e5" />
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp">
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="23dp"
+                    android:background="#2ECD36" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  种植情况"
+                    android:textColor="#5d5d5d"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="29dp"
+                    android:text="种植时间："
+                    android:textColor="#5d5d5d"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_plant_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="yyyy-mm-dd"
+                    android:textColor="#5d5d5d"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_isplanted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="29dp"
+                android:paddingTop="3dp"
+                android:text="是否种植（去种植/未种植）"
+                android:textColor="#5d5d5d"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="#e5e5e5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp">
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="23dp"
+                    android:background="#2ECD36" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  生长情况"
+                    android:textColor="#5d5d5d"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_ispicked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="29dp"
+                android:text="是否收获（去收获/未收获）"
+                android:textColor="#5d5d5d"
+                android:textSize="15dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="#e5e5e5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp">
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="23dp"
+                    android:background="#2ECD36" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="  配送情况"
+                    android:textColor="#5d5d5d"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="29dp"
+                    android:paddingTop="3dp"
+                    android:text="配送时间："
+                    android:textColor="#5d5d5d"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tv_send_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="yyyy-mm-dd"
+                    android:textColor="#5d5d5d"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_issended"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="29dp"
+                android:paddingTop="3dp"
+                android:text="去配送/确认收获"
+                android:textColor="#5d5d5d"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

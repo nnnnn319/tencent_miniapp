@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".base.pay.PayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:drawableLeft="@drawable/back"
+            android:paddingLeft="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="105dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="付款详情"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!--    app:layout_behavior="@string/appbar_scrolling_view_behavior"支持滑动-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:paddingTop="45dp"
+        android:paddingBottom="45dp"
+        android:text="10元"
+        android:textColor="#53DF4D"
+        android:textSize="45sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付宝账号"
+                android:textColor="#C1BEBE"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:text="183******55"
+                android:textColor="#5d5d5d"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="付款方式"
+                android:textColor="#C1BEBE"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="30dp"
+                android:text="建设银行储蓄卡(3309)"
+                android:textColor="#5d5d5d"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:drawableRight="@drawable/home_arrow_right"
+                android:paddingRight="10dp"
+                android:textColor="#5d5d5d" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/sure"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="245dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_gw"
+            android:paddingTop="8dp"
+            android:text="确认付款"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+    </LinearLayout>
+</LinearLayout>

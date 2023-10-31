@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".LoginNewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/up_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/login_username"
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background_wg"
+                android:hint="用户名"
+                android:textAlignment="center"
+                android:textColor="#53DF4D"
+                android:textColorHint="#53DF4D" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background_wg"
+                android:hint="密码"
+                android:password="true"
+                android:textAlignment="center"
+                android:textColor="#53DF4D"
+                android:textColorHint="#53DF4D" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+
+            <TextView
+                android:id="@+id/goToRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_gg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="马上注册"
+                android:textColor="#2ECD36"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/goToFixPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="140dp"
+                android:background="@drawable/background_gg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="忘记密码"
+                android:textColor="#2ECD36"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:background="@drawable/background_gw"
+                android:text="登录"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="#D81B1B" />
+
+    </LinearLayout>
+
+</RelativeLayout>

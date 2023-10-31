@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#851E1E"
+    tools:context=".map.MapRoutingActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        <Button-->
+        <!--            android:text="返回"-->
+        <!--            android:onClick="button4Click"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="60dp"/>-->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_wg"
+            android:onClick="button1Click"
+            android:text="步行导航" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_wg"
+            android:onClick="button2Click"
+            android:text="骑行导航" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="251dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_wg"
+            android:onClick="button3Click"
+            android:text="驾驶导航" />
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+        </com.baidu.mapapi.map.MapView>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

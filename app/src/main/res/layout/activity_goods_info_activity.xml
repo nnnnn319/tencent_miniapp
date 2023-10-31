@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".market.GoodsInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#53DF4D">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:drawableLeft="@drawable/back_w"
+            android:paddingLeft="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="105dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="商品详情"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <!--    app:layout_behavior="@string/appbar_scrolling_view_behavior"支持滑动-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/goods_image"
+            android:layout_width="match_parent"
+            android:layout_height="249dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_gw"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="图片"
+                android:textAlignment="center"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/goods_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingLeft="20dp"
+            android:text="¥16.9元"
+            android:textColor="#53DF4D"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/goods_number"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@drawable/background_gg"
+                android:paddingLeft="9dp"
+                android:text="库存14件"
+                android:textColor="#53DF4D"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/goods_sale_number"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/background_gg"
+                android:paddingLeft="9dp"
+                android:text="56人付款"
+                android:textColor="#53DF4D"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/product_description"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="left"
+            android:paddingLeft="20dp"
+            android:text="打饭包菜叶东北大白菜叶子包邮即食蘸酱蔬菜白菜叶饭包新鲜"
+            android:textColor="#000"
+            android:textSize="19sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="#27A8A6A6" />
+
+        <TextView
+            android:id="@+id/goods_farm_name"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:text="🌾跨世纪农场专营店"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="39dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="@drawable/background_gw"
+                android:paddingLeft="9dp"
+                android:text="UP"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/background_gg"
+                android:paddingLeft="9dp"
+                android:text="综合体验 ★★★★☆"
+                android:textColor="#53DF4D"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/test_username"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="宝贝评论                                               查看 〉"
+            android:textColor="#000"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:background="#3EA8A6A6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/back_to_cart_button"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:text="😀
+            商家"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/add_to_cart_button"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="70dp"
+            android:background="@drawable/background_gw"
+            android:text="加入购物车"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/buy_button"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/background_gw"
+            android:text="立即购买"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>
